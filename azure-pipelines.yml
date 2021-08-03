@@ -43,7 +43,8 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Pay-As-You-Go'
+    azureSubscription: '45146ef7-7ecc-41d5-9ee7-61244889654b'
+    appType: webApp
     appName: 'pipewebapp'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
