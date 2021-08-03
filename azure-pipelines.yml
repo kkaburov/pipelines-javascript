@@ -20,7 +20,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- script: mocha test --reporter mocha-junit-reporter
+#- script: mocha test --reporter mocha-junit-reporter
 
 - task: PublishCodeCoverageResults@1
   inputs: 
