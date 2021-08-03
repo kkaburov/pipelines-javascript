@@ -41,10 +41,10 @@ steps:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
 
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: '45146ef7-7ecc-41d5-9ee7-61244889654b'
-    appType: webApp
-    appName: 'pipewebapp'
-    package: '$(System.DefaultWorkingDirectory)'
-    customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
+# - task: AzureWebApp@1
+#  inputs:
+#    azureSubscription: 'Pay-As-You-Go'
+#   appType: webApp
+#    appName: 'pipewebapp'
+#    package: '$(System.DefaultWorkingDirectory)'
+#    customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
